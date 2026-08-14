@@ -3,30 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVERYBODY/NOBODY — New Angeles, 2077</title>
+    <title>EVERYBODY/NOBODY — Issue #1: Fragments</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <div id="app"></div>
+
+    <div id="bars"><div class="bar bar-top"></div><div class="bar bar-bot"></div></div>
+
     <div id="hud">
-      <div id="location"><span class="accent"></span>NEW ANGELES — SECTOR 7</div>
-      <div id="hint">&larr;/&rarr; or A/D — walk</div>
-      <div id="interact-hint" style="display:none">E — examine</div>
-      <div id="investigate-banner" style="display:none">INVESTIGATING</div>
+      <div id="loc"><span class="accent"></span><span id="loc-name">NEW ANGELES — SECTOR 7</span></div>
+      <div id="objective"></div>
+      <div id="prompt" style="display:none"></div>
+      <div id="board-key">C — case board</div>
+      <div id="legend">A/D or &larr;/&rarr; — walk &nbsp;·&nbsp; E — interact</div>
     </div>
-    <div id="dialogue-box" style="display:none">
-      <div id="dialogue-speaker"></div>
-      <div id="dialogue-text"></div>
-      <div id="dialogue-advance" style="display:none">&gt;</div>
+
+    <div id="dlg" style="display:none">
+      <div id="dlg-speaker"></div>
+      <div id="dlg-text"></div>
+      <div id="dlg-options"></div>
+      <div id="dlg-advance" style="display:none">&#9656;</div>
     </div>
-    <div id="examine-vignette"></div>
-    <div id="title-card">
-      <div id="title-scanlines"></div>
-      <h1 class="title-glitch" data-text="EVERYBODY/NOBODY">EVERYBODY<span class="title-slash">/</span>NOBODY</h1>
-      <p id="title-subtitle">a New Angeles story</p>
-      <div id="title-copyright">NEW ANGELES — 2077</div>
+
+    <div id="toast" style="display:none">
+      <span id="toast-label"></span>
+      <span id="toast-title"></span>
     </div>
+
+    <div id="board" style="display:none"></div>
+    <div id="cards" style="display:none"></div>
+    <div id="fade"></div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

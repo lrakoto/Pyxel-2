@@ -1,3 +1,3 @@
-import { Game } from './game/Game';
+import { Game } from './Game';
 
 new Game(document.getElementById('app')!);
