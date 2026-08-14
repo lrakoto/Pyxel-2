@@ -1,0 +1,25 @@
+{
+  "name": "everybody-nobody",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Cyberpunk noir detective RPG set in New Angeles, 2077. REPLACED-inspired 2.5D pixel art rendered in a 3D-lit scene.",
+  "scripts": {
+    "dev": "vite",
+    "build": "node tools/aseprite-import.mjs && tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc",
+    "import-art": "node tools/aseprite-import.mjs"
+  },
+  "dependencies": {
+    "postprocessing": "^6.37.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "fflate": "^0.8.3",
+    "pngjs": "^7.0.0",
+    "typescript": "~5.9.0",
+    "vite": "^7.1.0"
+  }
+}
